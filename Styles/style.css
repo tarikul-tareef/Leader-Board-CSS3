@@ -1,7 +1,7 @@
-/* Fonts */
+/* ----------------------Fonts-------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-/* Common Styles/Utilities/Base Styles */
+/* -------------------------Common Styles/Utilities/Base Styles--------------------------- */
 body{
   font-family: 'Poppins', sans-serif;
   background-color: #F3F1FF;
@@ -16,13 +16,16 @@ main{
   background-color: #FFFFFF;
   width: 840px;
   padding: 30px;
+  margin-bottom: 20px;
 }
 
 hr{
   color: #D1D1D1;
+  margin-bottom: 27px;
 }
 
-/* Top Players Styles */
+/*------------------------------------- Top Players Styles----------------------------------- */
+
 .top-players{
   margin-bottom: 30px;
 }
@@ -30,6 +33,7 @@ hr{
   font-size: 24px;
   color: #562EFF;
   margin-top: 3px;
+  margin-bottom: 30px;
 }
 
 .players{
@@ -52,3 +56,40 @@ hr{
   Margin-left: 16px;
   font-size: 18px;
 }
+
+/*---------------------------- Top-Blogs Styles ----------------------------------*/
+
+.blogs{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 26px;
+}
+.blog{
+  display: flex;
+  align-items: flex-end;
+}
+
+.blog .thumbnail img{
+  width: 177px;
+  height: 117px;
+}
+
+.blog-info{
+  margin-left: 16px;
+}
+
+.blog-title{
+  font-size: 20px;
+}
+
+.blog-author{
+  font-size: 16px;
+  color: #9F9F9F;
+}
+
+.blog-author a{
+  text-decoration: none;
+  color: #562EFF;
+}
+
+/* ----------------------------------Top Courses Styles---------------------------------------- */
