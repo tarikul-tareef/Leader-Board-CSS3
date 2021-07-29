@@ -16,7 +16,7 @@ main{
 
 .container{
   background-color: #FFFFFF;
-  width: 840px;
+  width: 870px;
   padding: 30px;
   margin-bottom: 20px;
 }
@@ -68,7 +68,6 @@ hr{
 }
 .blog{
   display: flex;
-  align-items: flex-end;
 }
 
 .blog .thumbnail img{
@@ -95,6 +94,17 @@ hr{
 }
 
 /* ----------------------------------Latest Courses Styles---------------------------------------- */
+.courses{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+}
+
+.course{
+  padding: 16px 12px;
+  border-radius: 13px;
+  box-shadow: 4px 4px 10px 3px rgba(0, 0, 0, 0.05);
+}
 
 .courses .course-banner img{
   width: 224px;
@@ -111,8 +121,14 @@ hr{
   color: #ED6B4F;
 }
 
+.course-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .fa-star{
-  font size: 13px;
+  font size: 12px;
 }
 
 .fa-star.filled{
@@ -122,3 +138,62 @@ hr{
 .fa-star.empty{
   color: #AEAEAE;
 }
+
+.course-info div span{
+  color: #A2A2A2;
+  font-size: 15px;
+}
+
+.fa-clock{
+  font-size: 20px;
+}
+.course-duration{
+  background-color: #FFE4E8;
+  font-size: 15px;
+  color: #FF4A60;
+  padding: 5px 10px;
+  border-radius: 25px;
+}
+
+/*-------------------------------------------------- Media Queries -----------------------------------*/
+
+/*------------------------------------------- FOR MOBILI DEVICES------------------------------------- */
+
+@media only screen and (max-width:688px) {
+  .container{
+    width: 100%;
+  }
+
+  .players, .blogs, .courses{
+    background-color: tomato;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .player, .blog, .course{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*------------------------------------------- FOR Tablet/iPad DEVICES------------------------------------- */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+  .container{
+    width: 100%;
+  }
+
+  .players, .blogs, .courses{
+    background-color: palegreen;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .player, .blog, .course{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
